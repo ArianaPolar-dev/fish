@@ -1,4 +1,4 @@
-// Función para manejar el clic en el botón "Sí Sí"
+// Función para manejar el clic en el botón "Sí"
 function handleYesClick() {
     alert("¡Sam está feliz de escuchar eso!");
 }
@@ -11,7 +11,14 @@ function handleIgnoreClick() {
     
     // Mostrar imagen
     document.getElementById("scaryImage").style.display = "block";
-    
-    // Mensaje final
-    alert("Nunca podrás escapar de mi...");
 }
+
+// Función para cerrar la ventana emergente
+function closePopup() {
+    document.getElementById('popup').classList.add('hidden');
+}
+
+// Mostrar la ventana emergente después de 10 segundos
+setTimeout(() => {
+    document.getElementById('popup').classList.remove('hidden');
+}, 10000);
