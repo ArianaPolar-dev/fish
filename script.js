@@ -5,14 +5,11 @@ function handleYesClick() {
 
 // Función para manejar el clic en el botón "Ignorar"
 function handleIgnoreClick() {
-    // Cambiar el fondo a negro y detener la música
+    // Cambiar el fondo a negro y ocultar el contenido
     document.body.classList.add("blackout");
-    document.getElementById("backgroundMusic").pause();
-    
-    // Hacer más pequeño el texto y ocultarlo
+
     const content = document.getElementById("content");
     content.classList.add("small-text");
-    content.style.display = "none";
     
     // Mostrar imagen
     document.getElementById("scaryImage").classList.remove("hidden");
