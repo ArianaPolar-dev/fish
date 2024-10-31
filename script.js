@@ -9,8 +9,13 @@ function handleIgnoreClick() {
     document.body.classList.add("blackout");
     document.getElementById("backgroundMusic").pause();
     
+    // Hacer más pequeño el texto y ocultarlo
+    const content = document.getElementById("content");
+    content.classList.add("small-text");
+    content.style.display = "none";
+    
     // Mostrar imagen
-    document.getElementById("scaryImage").style.display = "block";
+    document.getElementById("scaryImage").classList.remove("hidden");
 }
 
 // Función para cerrar la ventana emergente
