@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam's World</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Bienvenidos al mundo de Sam</h1>
     <h2>Un lugar donde los sueños se encuentran con las sombras</h2>
-    <p>Pasa el ratón sobre los elementos para revelar más de Sam.</p>
-    <p id="hiddenMessage" class="hidden-message">Sam siempre está contigo, aunque no lo veas...</p>
+    <p class="love-question">¿Me amas?</p>
     
-    <!-- Elementos secretos y glitches -->
-    <p class="glitch" id="glitchText">¿Puedes sentirlo?</p>
+    <!-- Botones de opciones -->
+    <button class="yes-button" onclick="handleYesClick()">Sí Sí</button>
+    <button class="ignore-button" onclick="handleIgnoreClick()">Ignorar</button>
     
-    <a href="#" class="secret-link" onclick="revealMessage()">Descubre el secreto</a>
+    <!-- Imagen que aparece al ignorar -->
+    <img src="photo_2024-10-31_16-21-38.jpg" id="scaryImage" class="hidden">
+
+    <!-- Música de fondo -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="español - Queen Moto.m4a" type="audio/m4a">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
 
     <script src="script.js"></script>
 </body>
