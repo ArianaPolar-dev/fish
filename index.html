@@ -10,20 +10,28 @@
 <body>
     <h1>Bienvenidos al mundo de Sam</h1>
     <h2>Un lugar donde los sueños se encuentran con las sombras</h2>
-    <p class="love-question">¿Me amas?</p>
-    
-    <!-- Botones de opciones -->
-    <button class="yes-button" onclick="handleYesClick()">Sí Sí</button>
-    <button class="ignore-button" onclick="handleIgnoreClick()">Ignorar</button>
-    
-    <!-- Imagen que aparece al ignorar -->
-    <img src="photo_2024-10-31_16-21-38.jpg" id="scaryImage" class="hidden">
 
     <!-- Música de fondo -->
     <audio id="backgroundMusic" loop autoplay>
-        <source src="español - Queen Moto.m4a" type="audio/m4a">
+        <source src="ruta_de_tu_musica.m4a" type="audio/m4a">
         Tu navegador no soporta la reproducción de audio.
     </audio>
+
+    <!-- Ventana emergente -->
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>¿Me amas?</p>
+            <button class="yes-button" onclick="handleYesClick()">Sí</button>
+            <button class="yes-button" onclick="handleYesClick()">Sí</button>
+        </div>
+    </div>
+
+    <!-- Botón de ignorar en la esquina -->
+    <button class="ignore-button" onclick="handleIgnoreClick()">Ignorar</button>
+
+    <!-- Imagen que aparece al ignorar -->
+    <img src="ruta_de_tu_imagen.jpg" id="scaryImage" class="hidden">
 
     <script src="script.js"></script>
 </body>
