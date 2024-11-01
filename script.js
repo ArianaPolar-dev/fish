@@ -13,6 +13,11 @@ function handleIgnoreClick() {
     
     // Mostrar imagen
     document.getElementById("scaryImage").classList.remove("hidden");
+
+    // Detener la música
+    const music = document.getElementById("backgroundMusic");
+    music.pause();
+    music.currentTime = 0;
 }
 
 // Función para cerrar la ventana emergente
